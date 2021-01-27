@@ -1,0 +1,82 @@
+﻿<Window x:Class="WpfTreeView.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         
+    Title="Drag and Drop Winodow" Height="500" Width="500">
+
+
+    <Grid>
+
+
+ 
+
+
+
+
+
+        <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                               
+        </Grid.ColumnDefinitions>
+
+
+
+
+
+
+
+
+
+
+        <GroupBox         x:Name="groupBox" Header="GroupBox" MouseDown="TextBlock_MouseDown" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="220" Width="247">
+            <StackPanel Margin="10">
+                <TextBlock Margin="10" >足球</TextBlock>
+                <TextBlock Margin="10">篮球</TextBlock>
+                <TextBlock Margin="10">羽毛球</TextBlock>
+
+                <TextBlock Margin="10">乒乓球</TextBlock>
+            </StackPanel>
+        </GroupBox>
+
+
+
+        <ListBox x:Name="listBox" Drop="listBox_Drop" HorizontalAlignment="Left" Height="190" Margin="285,10,0,0" VerticalAlignment="Top" Width="300" AllowDrop="True"/>
+
+
+
+
+
+
+
+
+
+
+        <Button  Content="调用python程序"  Click="buttonAdd_Click" Width="100" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            
+            
+            
+            
+        </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+
+
+
+   
+
+
+
+
+</Window>
